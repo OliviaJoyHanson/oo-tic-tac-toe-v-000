@@ -74,7 +74,9 @@ class TicTacToe
   end
 
   def winner
-    current_player == "X" && won? ? "O" : "X"
+    if won?
+      current_player == "X" ? "O" : "X"
+    end
   end
 
 
