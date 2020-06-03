@@ -74,12 +74,11 @@ class TicTacToe
   end
 
   def winner
-    turn_count.odd? ? "X" : "O" if won?
-    #if won? && @board.select{|i| i == "X"}.length > @board.select{|i| i == "O"}.length
-    #  "X"
-    #elsif won? && @board.select{|i| i = "O"}.length > @board.select{|i| i == "X"}.length
-    #  "O"
-    #end
+    if won? && @board.select{|i| i == "X"}.length > @board.select{|i| i == "O"}.length
+      "X"
+    elsif won? && @board.select{|i| i = "O"}.length > @board.select{|i| i == "X"}.length
+      "O"
+    end
   end
 
 
