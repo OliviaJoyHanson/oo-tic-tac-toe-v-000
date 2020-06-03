@@ -74,8 +74,10 @@ class TicTacToe
   end
 
   def winner
-    if won?
-      current_player == "X" ? "X" : "O"
+    if won? && current_player == "X"
+      "O"
+    elsif won? && current_player == "O"
+      "X"
     end
   end
 
