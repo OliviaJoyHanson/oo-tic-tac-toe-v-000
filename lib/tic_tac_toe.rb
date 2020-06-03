@@ -48,7 +48,7 @@ class TicTacToe
   end
 
   def turn_count
-    @board.select{|space| space != " "}.length
+    @board.select{|e| e != " "}.length
   end
 
   def current_player
@@ -62,7 +62,7 @@ class TicTacToe
   end
 
   def full?
-    @board.all?{|space| space == "X" || space == "O"}
+    @board.all?{|e| e == "X" || e == "O"}
   end
 
   def draw?
