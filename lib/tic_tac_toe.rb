@@ -82,6 +82,7 @@ class TicTacToe
       #won?.all?{|e| @board[e] == "O"}
       #won? && @board.select{|i| i = "O"}.length > @board.select{|i| i == "X"}.length
       "O"
+    end
   end
 
   def play
