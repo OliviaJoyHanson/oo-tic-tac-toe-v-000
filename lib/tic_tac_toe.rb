@@ -74,9 +74,9 @@ class TicTacToe
   end
 
   def winner
-    if won? && @board.select{|i| i = "X"}.length > @board.select{|i| i = "O"}.length
+    if won? && @board.select{|i| i == "X"}.length > @board.select{|i| i == "O"}.length
       "X"
-    elsif won? && @board.select{|i| i = "O"}.length > @board.select{|i| i = "X"}.length
+    elsif won? && @board.select{|i| i == "O"}.length > @board.select{|i| i == "X"}.length
       "O"
     end
   end
