@@ -74,10 +74,9 @@ class TicTacToe
   end
 
   def winner
-    binding.pry
     current_player == "X" ? "O" : "X" if won?
   end
 
-  
+
 
 end
