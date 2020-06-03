@@ -78,7 +78,8 @@ class TicTacToe
       #won?.all?{|e| @board[e] == "X"}
       #@board.select{|i| i == "X"}.length > @board.select{|i| i == "O"}.length
       "X"
-    elsif won? && won?.all?{|e| @board[e] == "O"}
+    elsif won? && @board[won?[0] == "X"]
+      #won?.all?{|e| @board[e] == "O"}
       #won? && @board.select{|i| i = "O"}.length > @board.select{|i| i == "X"}.length
       "O"
     end
